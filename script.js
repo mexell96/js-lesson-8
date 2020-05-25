@@ -11,9 +11,9 @@ for (var i = 0; i < numbers.length; i++) {
 
 
 // #1.2
-const numbers = [100, 101, 102, 103];
+const numbers2 = [100, 101, 102, 103];
 
-numbers.forEach(function(el, i) {
+numbers2.forEach(function(el, i) {
   setTimeout(function() {
     console.log('Index: ' + i + ', element: ' + el)
   }, (i + 1) * 1000)

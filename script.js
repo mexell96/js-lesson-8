@@ -62,4 +62,32 @@ function func(arr) {
 }
 
 func(items);
-// не понятно как получить значения из вложенных объектов
+
+
+let [a, b] = items;
+
+function itemsRecursive(a) {
+    if (a.parents.length === 0 || a.parents === null) {
+        return;
+    }
+    a.parents.forEach((parent) => {
+        console.log(parent.value);
+        itemsRecursive(parent);
+    });
+}
+
+itemsRecursive(a);
+
+function itemsRecursive2(b) {
+    if (b.parents.length === 0 || b.parents === null) {
+        return;
+    }
+    b.parents.forEach((parent) => {
+        console.log(parent.value);
+        itemsRecursive2(parent);
+    });
+}
+
+itemsRecursive2(b);
+
+// в консоль значения выводит, но вместе с ними ошибка из-за null, если напишешь, что не так, было бы неплохо

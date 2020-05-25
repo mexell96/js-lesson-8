@@ -1,4 +1,4 @@
-// #1
+// #1.1
 const numbers = [100, 101, 102, 103];
 
 for (var i = 0; i < numbers.length; i++) {
@@ -10,7 +10,7 @@ for (var i = 0; i < numbers.length; i++) {
 }
 
 
-// #2
+// #1.2
 const numbers = [100, 101, 102, 103]
 
 numbers.forEach(function(el, i) {
